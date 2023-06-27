@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>ECommerce Website</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="Design.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/sab.png" class="logo" </a>
+        <div>
+            <ul id="navbar">
+                <li><a  href="ecommerce.html">HOME</a></li>
+                <li><a class="active" href="shop.html">SHOP</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>CART</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/Product/f1.jpeg" width="100%" id= "Mainimg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/Product/f1.jpeg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/Product/f2.jpeg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/Product/f3.jpeg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+
+
+
+        </div>  
+        <div class="single-pro-details">
+            <h6>HOME / Shirts</h6>
+            <h4>Women's fashion wear</h4>
+            <h2>$128</h2>
+            <select >
+                <option >Select Size</option>
+                <option >XXL</option>
+                <option >XL</option>
+                <option >Large</option>
+                <option >Small</option>
+                <option >xtra-Small</option>
+
+            </select>
+                <input type="number" value="1">
+                <button class="normal">ADD TO CART</button>
+                <h4>Product details</h4>
+                <span>The cool summer shirt made from sustainable fabric.ummer shirts are often made from lightweight
+                    materials such as cotton, linen, or blends of these fabrics.
+                    These materials allow for better airflow and moisture absorption, keeping you cool and comfortable in hot weather.
+                </span>
+        </div>
+    </section>
+    <section id="Product1" class="section-p1">
+        <h2>Featured products</h2>
+        <p> Summer Collection New Modern designs</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/Product/f1.jpeg" alt="">
+            </div>
+            <div class="des">
+                <span>Adidas</span>
+                <h5>Cool Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$128</h4>
+            </div>
+            <a href="#"><i class="fa-shopping-cart cart"></i></a>
+            
+        </div>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/Product/f2.jpeg" alt="">
+            </div>
+            <div class="des">
+                <span>H&M</span>
+                <h5>Cool Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$105</h4>
+            </div>
+            <a href="#"><i class="fa-shopping-cart cart"></i></a>
+            <div class="pro">
+                <img src="img/Product/f3.jpeg" alt="">
+            </div>
+            <div class="des">
+                <span>West side</span>
+                <h5>Cool Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$130</h4>
+            </div>
+            <a href="#"><i class="fa-shopping-cart cart"></i></a>
+
+        </div>
+    </section>
+    <script>
+        var Mainimg = document.getElementById("Mainimg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            Mainimg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            Mainimg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            Mainimg.src = smallimg[2].src;
+        }
+    </script>
+    <section id="banner">
+    <h4>Repair services</h4>
+    <h2>Upto 70% off on all accessories!</h2>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
